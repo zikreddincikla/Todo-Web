@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📝 To-Do Project
+# To-Do Project
 
 **A clean, glassmorphism-styled to-do list built with vanilla HTML, CSS and JavaScript — no frameworks, no dependencies, no build step.**
 
@@ -27,15 +27,15 @@ It's built as a demonstration of solid fundamentals: semantic HTML, CSS Grid/Fle
 
 ## Features
 
-- ✅ **Add tasks** — via button click or `Enter` key
-- ✅ **Complete tasks** — one click toggles a task's completed state
-- 🗑️ **Delete tasks** — remove individual items instantly
-- 📦 **Bulk actions** — Check All, Uncheck All, and Clear All from the sidebar
-- 💾 **Persistent storage** — tasks are saved to `localStorage`, so they're still there when you come back
-- 🕒 **History panel** — a running record of tasks from your session
-- 📱 **Responsive layout** — reflows from a 3-column desktop grid into a stacked mobile view below `1080px`
-- 🪟 **Glassmorphism UI** — frosted-glass panels via `backdrop-filter: blur()`
-- 🔍 **SEO-ready** — Open Graph and Twitter Card meta tags are already wired up for link previews
+- **Add tasks** — via button click or `Enter` key
+- **Complete tasks** — one click toggles a task's completed state
+- **Delete tasks** — remove individual items instantly
+- **Bulk actions** — Check All, Uncheck All, and Clear All from the sidebar
+- **Persistent storage** — tasks are saved to `localStorage`, so they're still there when you come back
+- **History panel** — a running record of tasks from your session
+- **Responsive layout** — reflows from a 3-column desktop grid into a stacked mobile view below `1080px`
+- **Glassmorphism UI** — frosted-glass panels via `backdrop-filter: blur()`
+- **SEO-ready** — Open Graph and Twitter Card meta tags are already wired up for link previews
 
 ## Tech stack
 
@@ -62,7 +62,7 @@ npx serve .
 ```
 
 <details>
-<summary><b>📁 Project structure</b></summary>
+<summary><b>Project structure</b></summary>
 
 ```
 to-do-project/
@@ -77,7 +77,7 @@ to-do-project/
 </details>
 
 <details>
-<summary><b>🧠 How persistence works</b></summary>
+<summary><b>How persistence works</b></summary>
 
 Every add, check, or delete action calls `save_todo()`, which serializes the current list into a plain array of `{ text, completed }` objects and writes it to `localStorage` under the `todos` key[^1]. On page load, `load_todo()` reads that array back and rebuilds the DOM from it — so the interface is always a direct reflection of what's in storage, not the other way around.
 

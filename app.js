@@ -24,10 +24,12 @@ function add_todo(input){
     const btn_delete = document.createElement("button");
     btn_delete.classList.add("todo-item-delete");
     btn_delete.textContent = "🗑️";
+    btn_delete.title="Delete to-do button";
 
     const btn_check = document.createElement("button");
     btn_check.classList.add("todo-item-check");
     btn_check.textContent = "✅";
+    btn_check.title="Check to-do button"
 
     new_div.appendChild(btn_delete);
     new_div.appendChild(btn_check);

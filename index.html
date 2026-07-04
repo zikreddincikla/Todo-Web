@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do Projesi</title>
+    <title>To-Do Project</title>
     <meta name="theme-color" content="#ffa500">
     <meta name="author" content="Zikreddin">
     <meta name="keywords" content="To-Do, Html, Css, Js">
-    <meta name="description" content="Html, Css ve Js teknolojileri kullanılarak yapılmış To-Do Projesidir">
+    <meta name="description" content="This is a To-Do project built using HTML, CSS, and JS technologies">
 
-    <meta name="twitter:title" content="To-Do Projesi">
-    <meta name="twitter:description" content="Html, Css ve Js teknolojileri kullanılarak yapılmış To-Do Projesidir">
+    <meta name="twitter:title" content="To-Do Project">
+    <meta name="twitter:description" content="This is a To-Do project built using HTML, CSS, and JS technologies">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="Resimler/gunbatimi.png">
+    <meta name="twitter:image" content="Pictures/Sunset.png">
     
-    <meta property="og:title" content="To-Do Projesi">
-    <meta property="og:description" content="Html, Css ve Js teknolojileri kullanılarak yapılmış To-Do Projesidir">
+    <meta property="og:title" content="To-Do Project">
+    <meta property="og:description" content="This is a To-Do project built using HTML, CSS, and JS technologies">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="Resimler/gunbatimi.png">
+    <meta property="og:image" content="Pictures/Sunset.png">
 
-    <link rel="icon" href="Resimler/icon.ico" type="image/x-ico">
+    <link rel="icon" href="Pictures/icon.ico" type="image/x-ico">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -27,46 +27,46 @@
         <nav id="navbar">
             <h2 id="logo-text">Zikreddin</h2> 
             <ul id="nav-list">
-                <li class="nav-item"><a href="https://github.com/zikreddincikla" target="_blank">Github</a></li>
+                <li class="nav-item"><a href="https://github.com/zikreddincikla" target="_blank" title="Zikreddin github profile">Github</a></li>
             </ul>
         </nav>
     </header>
 
     <main id="main-content">
         <aside id="sidebar">
-            <h2>Kısayollar</h2>
-            <button class="action-btn" id="btn-clear-all">Hepsini Temizle</button>
-            <button class="action-btn" id="btn-check-all">Hepsini İşaretle</button>
-            <button class="action-btn" id="btn-uncheck-all">Bütün İşaretleri Geri Al</button>
+            <h2>Shortcuts</h2>
+            <button class="action-btn" id="btn-clear-all" title="Clear all button">Clear All</button>
+            <button class="action-btn" id="btn-check-all" title="Check all button">Check All</button>
+            <button class="action-btn" id="btn-uncheck-all" title="Uncheck all button">Uncheck All</button>
         </aside>
 
         <article id="todo-container">
             <div id="todo-form-wrapper">
-                <h2>To-Do Listesi</h2>
+                <h2>To-Do List</h2>
                 <div id="todo-form">
-                    <input type="text" id="todo-input" maxlength="30" placeholder="Bir görev yazın...">
-                    <button id="btn-add-todo">Ekle</button>
+                    <input type="text" id="todo-input" maxlength="30" placeholder="Write something...">
+                    <button id="btn-add-todo" title="Add to-do Button">Add</button>
                 </div>
             </div>
             <div id="todo-list-wrapper">
                 <ul id="todo-list">
                     </ul>
-                <p id="empty-list-warning">Burası boş... Bir şeyler eklemek ister misin?</p>
+                <p id="empty-list-warning">This place is empty... Would you like to add a to-do?</p>
             </div>
         </article>
 
         <aside id="history-sidebar">
-            <h2>Geçmişin</h2>
+            <h2>History</h2>
             <div id="history-list-wrapper">
                 <ul id="history-list">
                     </ul>
-                <p id="history-empty-warning">Burası boş... Yeni misin?</p>
+                <p id="history-empty-warning">This place is empty... Are you new?</p>
             </div>
         </aside>
     </main>
 
     <footer id="main-footer">
-        <p>&copy; 2026 Zikreddin | Tüm haklara sahiptir</p>
+        <p>&copy;2026 Zikreddin | All rights reserved.</p>
     </footer>
 
     <script src="app.js"></script>
